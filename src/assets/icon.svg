@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5AC8FF"/>
+      <stop offset="1" stop-color="#0A6CFF"/>
+    </linearGradient>
+    <linearGradient id="front" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#DCE4EE"/>
+    </linearGradient>
+    <linearGradient id="inside" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0B2A4F"/>
+      <stop offset="1" stop-color="#1D4E86"/>
+    </linearGradient>
+    <linearGradient id="card1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFE14D"/>
+      <stop offset="1" stop-color="#FFC300"/>
+    </linearGradient>
+    <linearGradient id="card2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FF6B8A"/>
+      <stop offset="1" stop-color="#FF2D55"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#002a66" flood-opacity="0.35"/>
+    </filter>
+    <clipPath id="squircle">
+      <rect x="64" y="64" width="896" height="896" rx="210"/>
+    </clipPath>
+  </defs>
+
+  <!-- Fundo -->
+  <rect x="64" y="64" width="896" height="896" rx="210" fill="url(#bg)"/>
+  <g clip-path="url(#squircle)">
+    <ellipse cx="512" cy="120" rx="560" ry="260" fill="#FFFFFF" opacity="0.12"/>
+
+    <!-- Interior da gaveta aberta -->
+    <rect x="196" y="452" width="632" height="120" rx="36" fill="url(#inside)"/>
+
+    <!-- Meme de trás (rosa) -->
+    <g transform="rotate(12 600 380)" filter="url(#shadow)">
+      <rect x="470" y="210" width="270" height="320" rx="34" fill="#FFFFFF"/>
+      <rect x="490" y="230" width="230" height="230" rx="20" fill="url(#card2)"/>
+    </g>
+
+    <!-- Meme da frente (carinha rindo) -->
+    <g transform="rotate(-9 440 360)" filter="url(#shadow)">
+      <rect x="290" y="168" width="310" height="370" rx="38" fill="#FFFFFF"/>
+      <rect x="313" y="191" width="264" height="264" rx="24" fill="url(#card1)"/>
+      <path d="M375 300 q30 -38 60 0" fill="none" stroke="#5C3B00" stroke-width="20" stroke-linecap="round"/>
+      <path d="M455 300 q30 -38 60 0" fill="none" stroke="#5C3B00" stroke-width="20" stroke-linecap="round"/>
+      <path d="M372 340 h146 q0 82 -73 82 q-73 0 -73 -82 z" fill="#5C3B00"/>
+      <path d="M402 392 q43 26 86 0 q-10 30 -43 30 q-33 0 -43 -30 z" fill="#FF6B6B"/>
+    </g>
+
+    <!-- Frente da gaveta -->
+    <g filter="url(#shadow)">
+      <rect x="176" y="512" width="672" height="330" rx="64" fill="url(#front)"/>
+    </g>
+    <rect x="412" y="640" width="200" height="50" rx="25" fill="#8FA3BA"/>
+    <rect x="412" y="640" width="200" height="22" rx="11" fill="#A9BACC"/>
+  </g>
+</svg>

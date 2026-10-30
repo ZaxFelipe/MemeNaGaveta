@@ -1,0 +1,13 @@
+node_modules/
+dist/
+release/
+src-tauri/target/
+src-tauri/gen/
+# Dados do app portátil (criados ao lado do exe)
+MemeNaGaveta-dados/
+*.log
+
+# Notas do Claude (fora do repositório)
+CLAUDE.md
+LEIA.md
+.claude/
