@@ -15,6 +15,10 @@ Portátil, leve (~4 MB) e 100% offline.
 ![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=black)
 ![Portátil](https://img.shields.io/badge/instala%C3%A7%C3%A3o-n%C3%A3o%20precisa-success)
 
+<br />
+
+<img src="docs/screenshot.png" alt="Janela do Meme na Gaveta mostrando a grade de memes" width="900" />
+
 </div>
 
 ---
